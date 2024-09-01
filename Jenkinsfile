@@ -1,5 +1,9 @@
 pipeline {
-    agent docker { image 'maven:3.9.9-eclipse-temurin-21-alpine' }
+        agent {
+        docker {
+            image 'maven:3.9.3-eclipse-temurin-17'
+            args '-v $HOME/.m2:/home/dirk/.m2'
+        }
 
     stages {
        // stage('Checkout') {
