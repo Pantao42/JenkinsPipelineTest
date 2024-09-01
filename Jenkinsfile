@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
+       // stage('Checkout') {
+         //   steps {
                 // Checkout Repository from GitHub
-                git 'https://github.com/Pantao42/JenkinsPipelineTest.git'
-            }
-        }
+           //     git 'https://github.com/Pantao42/JenkinsPipelineTest.git'
+            //}
+        //}
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
