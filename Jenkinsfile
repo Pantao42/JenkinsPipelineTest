@@ -7,7 +7,7 @@ pipeline {
        //         }
        // }
         environment {
-                mvnHome = 'M3'
+                mvnHome = tool 'M3'
         }
     stages {
        // stage('Checkout') {
